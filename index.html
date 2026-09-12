@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-200 font-comfortaa font-extrabold">
+    <div class="bg-white max-w-md m-auto rounded-xl mt-6 overflow-hidden">
+        <div class="bg-indigo-500 text-white px-6 py-6">
+            <h1 class="text-3xl">ToDo App</h1>
+        </div>
+        <div class="p-5">
+            <form id="todo-form" class="flex gap-4 mb-2" action="">
+                <input id="todo-input"
+                    class="flex-1 text-slate-600 font-semibold border border-slate-500 rounded-lg p-2" type="text"
+                    placeholder="Enter Task Description ....">
+                <button id="todo-btn" class="bg-violet-500 text-white rounded-lg px-6 py-2 cursor-pointer">Add</button>
+            </form>
+            <div class="text-right">
+                <span id="cancel-upd-btn" class="hidden text-sm hover:underline underline-offset-2 cursor-pointer">Cancel
+                    Update</span>
+            </div>
+            <div class="flex justify-between text-xs text-slate-400 font-bold border-b border-slate-400 pt-6 pb-1 mb-4">
+                <p id="task-count">MY TASKS (0)</p>
+                <p id="completed-tasks">COMPLETED : 0</p>
+            </div>
+            <ul id="todo-list" class="flex flex-col gap-2">
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
